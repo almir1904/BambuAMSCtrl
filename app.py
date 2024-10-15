@@ -12,10 +12,10 @@ import io
 import qrcode
 from serial.tools import list_ports
 
-log_file = 'application.log'
+log_file = 'logs/application.log'
 logging.basicConfig(filename=log_file, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-CONFIG_FILE = 'config.json'
+CONFIG_FILE = 'config/config.json'
 
 default_config = {
     "MQTT_BROKER_URL": "localhost",
