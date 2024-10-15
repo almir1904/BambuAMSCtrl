@@ -9,6 +9,7 @@ from base64 import b64decode
 import ssl
 from threading import Timer
 import io
+from PIL import Image, ImageDraw
 import qrcode
 from serial.tools import list_ports
 
