@@ -41,5 +41,5 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: |
-            ghcr.io/almir1904/anime-loads-indexer:latest
+            ghcr.io/almir1904/BambuAMSCtrl:latest
           labels: ${{ steps.meta.outputs.labels }}
