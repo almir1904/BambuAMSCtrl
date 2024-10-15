@@ -20,7 +20,9 @@ RUN mkdir /app
 COPY . /app/bambuamsctrl
 WORKDIR /app/bambuamsctrl
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt && \
+mkdir /app/bambuamsctrl/config && \
+mkdir /app/bambuamsctrl/logs
 CMD ["/app/bambuamsctrl/app.py"]
 ENTRYPOINT ["python"]
 
